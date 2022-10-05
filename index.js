@@ -4,14 +4,20 @@ const babel = require('@babel/core')
 const babelTypes = require('@babel/types')
 
 // 转化箭头函数的插件
-const arrowFunction = require('@babel/plugin-transform-arrow-functions')
+// const arrowFunction = require('@babel/plugin-transform-arrow-functions')
+
+// 我们自己实现的转化插件
+const {
+  arrowFunctionPlugin,
+} = require('./libs/plugin-transform-arrow-functions')
 
 const sourceCode = `const arrowFunc = () => {
 	console.log(this)
 }`
 
 const targetCode = babel.transform(sourceCode, {
-  plugins: [arrowFunction],
+  // plugins: [arrowFunction],
+  plugins: [arrowFunctionPlugin],
 })
 
 console.log(targetCode.code)
