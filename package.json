@@ -1,0 +1,25 @@
+{
+  "name": "babel-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zengkaiwang/babel-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zengkaiwang/babel-app/issues"
+  },
+  "homepage": "https://github.com/zengkaiwang/babel-app#readme",
+  "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/plugin-transform-arrow-functions": "^7.18.6",
+    "@babel/types": "^7.19.3"
+  }
+}
